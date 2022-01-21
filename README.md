@@ -1,7 +1,14 @@
 ## pocket.sh
 
 Bash script to read urls from stdin and batch add them to pocket. Working on
-MacOS 12.1 with bash 5.
+MacOS 12.1.
+
+Dependencies:
+- bash 5 (e.g. via homebrew)
+- Create an API consumer_key and set it in `config.env` (copy from
+  `config-sample.env`)
+    - Needs at least `modify` scope
+    - https://getpocket.com/developer/apps/
 
 Usage example:
 
