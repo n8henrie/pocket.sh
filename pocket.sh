@@ -31,7 +31,8 @@ get_access_token() {
       jq --raw-output '.access_token'
   )
 
-  printf "Consider exporting the access token to save time:\nexport ACCESS_TOKEN=${access_token}\n"
+  printf 'Consider exporting the access token to save time:
+    export ACCESS_TOKEN=%s\n' "${access_token}"
   ACCESS_TOKEN=${access_token}
 }
 
